@@ -14,7 +14,7 @@ export default class List extends Component {
     }
 
     getUsers = () => {
-        const url = 'https://randomuser.me/api/?results=10&?nat=us'
+        const url = 'https://randomuser.me/api/?results=100'
         axios.get(url).then( (result) => {
             this.setState({
                 users: result.data.results
@@ -25,7 +25,6 @@ export default class List extends Component {
     }
 
     render() {
-        console.log(this.state.users);
         return (
             <table className='table'>
                 <thead>
