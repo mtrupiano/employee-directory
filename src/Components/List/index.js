@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import ListItem from '../ListItem'
+import React, { Component } from 'react';
+import ListItem from '../ListItem';
+import './style.css';
 import axios from 'axios';
 
 export default class List extends Component {
