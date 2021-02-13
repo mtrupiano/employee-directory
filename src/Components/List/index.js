@@ -26,13 +26,23 @@ export default class List extends Component {
     render() {
         console.log(this.state.users);
         return (
-            <ul className='list-group'>
-                { this.state.users.map(
-                    (e) => {
-                        return <ListItem key={e.login.uuid} user={e} />
-                    }
-                ) }
-            </ul>
+            <table className='table'>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    { this.state.users.map(
+                        (e) => {
+                            return <ListItem key={e.login.uuid} user={e} />
+                        }
+                    ) } 
+                </tbody>
+            </table>
         )
     }
 }
