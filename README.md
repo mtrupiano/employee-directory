@@ -8,4 +8,4 @@ This is an application developed to practice using React. The site fetches a lis
 ## Usage
 A deployed build of this application can be found [here]().
 
-In order to build the application locally, clone the source repository and run `npm i` or `yarn add` to install dependencies. From the repository's local directory, run `npm start` or `yarn start` in order to run the application. A browser window should then open with the application running.
+In order to build the application locally, clone the source repository and run `yarn install` to install dependencies. From the repository's local directory, run `yarn start` in order to run the application. A browser window should then open with the application running.
